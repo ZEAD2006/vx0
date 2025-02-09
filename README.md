@@ -9,3 +9,4 @@ chmod +x install.sh
 
 ./install.sh
 
+python3 vx0.py
