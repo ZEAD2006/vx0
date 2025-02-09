@@ -9,4 +9,8 @@ chmod +x install.sh
 
 ./install.sh
 
-python3 vx0.py
+python3 vx0.py -d example.txt -a  >>> collecting subdomains
+
+python3 vx0.py -d example.txt -b  >>>> wayback machine
+
+python3 vx0.py -d example.txt -c    >>>>> filtering working subdomains from  the result of (python3 vx0.py -d example.txt -a)
