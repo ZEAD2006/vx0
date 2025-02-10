@@ -1,14 +1,14 @@
 # VX0 Tool
 
-VX0 is a simple and easy-to-use tool designed for **subdomain enumeration** and **web archive data collection**. It helps you discover subdomains, filter live ones, and extract valuable data from the Wayback Machine.
+VX0 is a simple and easy-to-use tool designed for **subdomain enumeration**, **filtering specific data and subdomains** and **web archive data collection**. It helps you discover subdomains, filter live ones, and extract valuable data from the Wayback Machine.
 
 ---
 
 ## Features
 
-- **Subdomain Enumeration**: Collect subdomains using popular tools like `amass`, `subfinder`, and `assetfinder`.
-- **Web Archive Data**: Fetch historical data from the Wayback Machine using `curl`.
-- **Live Subdomains**: Filter and check live subdomains using `httpx`.
+- **Subdomain Enumeration**: Collect subdomains using popular tools instead of `amass`, `subfinder`, and `assetfinder`.
+- **Web Archive Data**: Fetch historical data from the Wayback Machine .
+- **Live Subdomains**: Filter and check live subdomains instead of `httpx`.
 ---
 
 ## Installation
