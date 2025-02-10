@@ -11,6 +11,10 @@ VX0 is a simple and easy-to-use tool designed for **subdomain enumeration**, **f
 - **Live Subdomains**: Filter and check live subdomains instead of `httpx`.
 ---
 
+## Requirements
+- pip install -r requirements.txt
+---
+
 ## Installation
 
 1. Make sure you have (Python3) installed on your system.
