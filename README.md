@@ -1,16 +1,20 @@
-git clone https://github.com/ZEAD2006/vx0.git
+# VX0 Tool
 
-cd vx0
+VX0 is a simple and easy-to-use tool designed for **subdomain enumeration** and **web archive data collection**. It helps you discover subdomains, filter live ones, and extract valuable data from the Wayback Machine.
 
-pip3 install -r requirements.txt
+---
 
+## Features
 
-chmod +x install.sh
+- **Subdomain Enumeration**: Collect subdomains using popular tools like `amass`, `subfinder`, and `assetfinder`.
+- **Web Archive Data**: Fetch historical data from the Wayback Machine using `curl`.
+- **Live Subdomains**: Filter and check live subdomains using `httpx`.
+---
 
-./install.sh
+## Installation
 
-python3 vx0.py -d example.txt -a                        >>> collecting subdomains
-
-python3 vx0.py -d example.txt -b                              >>>> wayback machine
-
-python3 vx0.py -d example.txt -c                            >>>>> filtering working subdomains from  the result of (python3 vx0.py -d example.txt -a)
+1. Make sure you have (Python3) installed on your system.
+2. Clone the repository:
+   ```bash
+   git clone https://github.com/username/vx0-tool.git
+   cd vx0-tool
