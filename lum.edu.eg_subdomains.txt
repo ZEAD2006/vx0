@@ -1,0 +1,20 @@
+crm.lum.edu.eg (FQDN)
+fwtrack.lum.edu.eg (FQDN)
+www.lum.edu.eg (FQDN)
+lms.lum.edu.eg (FQDN)
+sis.lum.edu.eg (FQDN)
+stagesis.lum.edu.eg (FQDN)www.lum.edu.eg
+sis.lum.edu.eg
+stagesis.lum.edu.eg
+crm.lum.edu.eg
+fwtrack.lum.edu.eg
+lms.lum.edu.eg
+sis.lum.edu.eg
+lms.lum.edu.eg
+crm.lum.edu.eg
+fwtrack.lum.edu.eg
+lum.edu.eg
+www.lum.edu.eg
+sis.lum.edu.eg
+stagesis.lum.edu.eg
+lum.edu.eg
