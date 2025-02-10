@@ -12,6 +12,7 @@ VX0 is a simple and easy-to-use tool designed for **subdomain enumeration**, **f
 ---
 
 ## Requirements
+- pip install colorama
 - pip install -r requirements.txt
 ---
 
