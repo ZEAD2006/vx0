@@ -27,6 +27,7 @@ VX0 is a simple and easy-to-use tool designed for **subdomain enumeration**, **f
     -a\-b\-c
 
 ## usage
+    ```bash
 1. python3 vx0.py -d example.com -a
    collection subdomains 
 2. python3 vx0.py -d example.com -b
