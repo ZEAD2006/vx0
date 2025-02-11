@@ -8,10 +8,11 @@ VX0 is a simple and easy-to-use tool designed for **subdomain enumeration**, **f
 
 - **Subdomain Enumeration**: Collect subdomains using popular tools instead of `amass`, `subfinder`, and `assetfinder`.
 - **Web Archive Data**: Fetch historical data from the Wayback Machine .
-- **Live Subdomains**: Filter and check live subdomains instead of `httpx`.
+- **Working Subdomains**: Filter and check live subdomains instead of `httpx` and delete the duplicatd.
 ---
 
 ## Requirements
+
 - pip install colorama
 - pip install -r requirements.txt
 ---
