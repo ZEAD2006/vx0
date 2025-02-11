@@ -20,14 +20,14 @@ VX0 is a simple and easy-to-use tool designed for **subdomain enumeration**, **f
 
 1. Make sure you have (Python3) installed on your system.
 2. Clone the repository:
-   ```
+   ```bash
    git clone https://github.com/ZEAD2006/vx0.git
    cd vx0
    sh install.sh
     -a\-b\-c
 
 ## usage
-    ```bash
+    ```
     python3 vx0.py -d example.com -a
     python3 vx0.py -d example.com -b
     python3 vx0.py -d example.com -c
