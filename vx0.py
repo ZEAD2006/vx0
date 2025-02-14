@@ -65,10 +65,26 @@ def option_b(domain):
     sensitive_files = f"{domain}_sensitive_files.txt"
     
     print(Fore.YELLOW + "[+] Fetching data from Wayback Machine...")
-    curl_command = f'curl -G "https://web.archive.org/cdx/search/cdx" --data-urlencode "url=*.{domain}/*" --data-urlencode "collapse=urlkey" --data-urlencode "output=text" --data-urlencode "fl=original" > {hidden_file}'
-    run_command(curl_command)
+    
+    curl_command = [
+        "curl", "-G", "https://web.archive.org/cdx/search/cdx",
+        "--data-urlencode", f"url=*.{domain}/*",
+        "--data-urlencode", "collapse=urlkey",
+        "--data-urlencode", "output=text",
+        "--data-urlencode", "fl=original"
+    ]
+    
+    # فتح الملف لتخزين البيانات المسترجعة
+    with open(hidden_file, "w") as file:
+        result = subprocess.run(curl_command, stdout=file, stderr=subprocess.PIPE)
+        
+        # إذا حدث خطأ أثناء تنفيذ الأمر
+        if result.returncode != 0:
+            print(Fore.RED + f"Error running curl command: {result.stderr.decode()}")
+            return
     
     print(Fore.YELLOW + "[+] Filtering out images and non-sensitive files...")
+    
     sensitive_extensions = ['.js', '.json', '.php', '.xml', '.config', '.env', '.sql', '.bak', '.log', '.yaml', '.yml', '.txt']
     
     with open(hidden_file, 'r') as file:
@@ -86,8 +102,9 @@ def option_b(domain):
     with open(sensitive_files, 'w') as file:
         file.write("\n".join(sensitive_links))
     
-    print(Fore.GREEN + f" wayback data collected and saved to {hidden_file}")
+    print(Fore.GREEN + f" Wayback data collected and saved to {hidden_file}")
     print(Fore.GREEN + f" Sensitive files saved to {sensitive_files}")
+
 
 def option_c(domain):
     print(Fore.CYAN + f" Collecting working links for {domain}...")
